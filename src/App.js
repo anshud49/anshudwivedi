@@ -155,6 +155,7 @@ function App() {
           <span className="header-item">Practice <FaChevronDown className="down-arrow" /></span>
           <FaUserCircle className="profile-icon" />
         </div>
+        <hr />
       </header>
       <div className="back-to-questions">
         <FaArrowLeft className="back-arrow" />
