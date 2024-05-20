@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/anshudwivedi/static/css/main.47d4b2c4.css",
+    "main.js": "/anshudwivedi/static/js/main.a6de63d0.js",
+    "index.html": "/anshudwivedi/index.html",
+    "main.47d4b2c4.css.map": "/anshudwivedi/static/css/main.47d4b2c4.css.map",
+    "main.a6de63d0.js.map": "/anshudwivedi/static/js/main.a6de63d0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.47d4b2c4.css",
+    "static/js/main.a6de63d0.js"
+  ]
+}
