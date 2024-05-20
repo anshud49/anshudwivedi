@@ -155,8 +155,9 @@ function App() {
           <span className="header-item">Practice <FaChevronDown className="down-arrow" /></span>
           <FaUserCircle className="profile-icon" />
         </div>
-        <hr />
+      
       </header>
+      <hr style={{ height: '1px', marginTop:'0px',borderWidth: 0, color: 'red', backgroundColor: 'red',zIndex:'1'}} />
       <div className="back-to-questions">
         <FaArrowLeft className="back-arrow" />
         <span className="back-text">Back to Questions</span>
