@@ -143,10 +143,11 @@ function App() {
     setShowF1(false);
     setShowicon(false);
   };
-   
+  
   return (
-    <div className="app">
-      <header className="header">
+    <div className="app" >
+
+      <header className="header" style={{ opacity: showF1 ? '0.4' : '1' }}>
         <div className="header-left">
           <span className="platform-text">THE PRODUCT PLATFORM</span>
         </div>
@@ -155,15 +156,15 @@ function App() {
           <span className="header-item">Practice <FaChevronDown className="down-arrow" /></span>
           <FaUserCircle className="profile-icon" />
         </div>
-      
+
       </header>
-      <hr style={{ height: '1px', marginTop:'0px',borderWidth: 0, color: 'red', backgroundColor: 'red',zIndex:'1'}} />
+      <hr style={{ height: '1px', marginTop: '0px',borderWidth: 0, color: 'red', backgroundColor: '#333', zIndex: '1' }} />
       <div className="back-to-questions">
         <FaArrowLeft className="back-arrow" />
         <span className="back-text">Back to Questions</span>
       </div>
-      <div className="content-container">
-        <div className="and-content">
+      <div className="content-container" >
+        <div className="and-content" style={{ opacity: showF1 ? '0.4' : '1' }}>
           <div className="and1">
             <span>Practice Interview Questions</span>
           </div>
@@ -198,130 +199,132 @@ function App() {
 
         </div>
         <main className="main-content">
-          <div className="box box1">
-            <div className="box1-div1">
-              <span className="badge">Design</span>
-              <span className="badge">Technology</span>
-              <span className="rocket">🚀</span>
-            </div>
-            <div className="box1-div2">
-              <p>What are the key considerations when designing a user-friendly interface for a mobile application?</p>
-            </div>
-            <div className="box1-div3">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque urna vel orci posuere, nec facilisis orci vehicula. Vestibulum et euismod nulla, ut condimentum metus. Aliquam erat volutpat. Donec at arcu id turpis faucibus viverra.</p>
-            </div>
-            <div className="box1-div4">
-              <div className="views">
-                <FaEye className="icon" />
-                <span>100 views</span>
+          <div className="opa" style={{ opacity: showF1 ? '0.4' : '1' }}>
+            <div className="box box1">
+              <div className="box1-div1">
+                <span className="badge">Design</span>
+                <span className="badge">Technology</span>
+                <span className="rocket">🚀</span>
               </div>
-              <div className="info">
-                <FaInfoCircle className="icon" />
-                <span>How should you word your answer?</span>
+              <div className="box1-div2">
+                <p>What are the key considerations when designing a user-friendly interface for a mobile application?</p>
               </div>
-            </div>
-          </div>
-          <div className="box2">
-            <div className="box3">
-              <span className="left-text">Answer(23)</span>
-              <div className="right-section">
-                <span className="right-text">Sort by:</span>
-                <select className="dropdownr">
-                  <option value="latest" >Popular</option>
-                  <option value="latest">Latest</option>
-                  <option value="oldest">Oldest</option>
-                  <option value="upvotes">Upvotes</option>
-                </select>
+              <div className="box1-div3">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque urna vel orci posuere, nec facilisis orci vehicula. Vestibulum et euismod nulla, ut condimentum metus. Aliquam erat volutpat. Donec at arcu id turpis faucibus viverra.</p>
+              </div>
+              <div className="box1-div4">
+                <div className="views">
+                  <FaEye className="icon" />
+                  <span>100 views</span>
+                </div>
+                <div className="info">
+                  <FaInfoCircle className="icon" />
+                  <span>How should you word your answer?</span>
+                </div>
               </div>
             </div>
-            <div className="box box4">
-              <div className="box4-div1">
-                <div className="profile-info">
-                  <FaUserCircle className="profile-icon1" />
-                  <div className="name-date">
-                    <span className="name">Anshu Dwivedi</span>
-                    <span className="date">May 18, 2024</span>
+            <div className="box2">
+              <div className="box3">
+                <span className="left-text">Answer(23)</span>
+                <div className="right-section">
+                  <span className="right-text">Sort by:</span>
+                  <select className="dropdownr">
+                    <option value="latest" >Popular</option>
+                    <option value="latest">Latest</option>
+                    <option value="oldest">Oldest</option>
+                    <option value="upvotes">Upvotes</option>
+                  </select>
+                </div>
+              </div>
+              <div className="box box4">
+                <div className="box4-div1">
+                  <div className="profile-info">
+                    <FaUserCircle className="profile-icon1" />
+                    <div className="name-date">
+                      <span className="name">Anshu Dwivedi</span>
+                      <span className="date">May 18, 2024</span>
+                    </div>
+                  </div>
+                  <div className="edit-section">
+                    <FaPencilAlt className="edit-icon" />
+                    <span className="edit-text">Edit</span>
                   </div>
                 </div>
-                <div className="edit-section">
-                  <FaPencilAlt className="edit-icon" />
-                  <span className="edit-text">Edit</span>
+                <div className="box4-div2">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dolore saepe totam rem ipsum delectus eveniet modi sit quos voluptates doloribus repellat ipsam, eligendi hic neque quod quaerat. Recusandae tempore ab mollitia, ratione deleniti asperiores dolorem ex quo nemo cum voluptas placeat. Ex reprehenderit eius vero voluptatem quaerat possimus numquam cumque nam. Modi nemo nulla corporis maiores facere aliquam infor..... <span>Show More</span></p>
+                </div>
+                <div className="box4-div3">
+                  <FaThumbsUp className="icon" />
+                  <span className="like-text">Like</span>
+                  <FaCommentDots className="icon" />
+                  <input type="text" className="comment-input" placeholder="Add a comment" />
+                  <button className="post-button">Post</button>
                 </div>
               </div>
-              <div className="box4-div2">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dolore saepe totam rem ipsum delectus eveniet modi sit quos voluptates doloribus repellat ipsam, eligendi hic neque quod quaerat. Recusandae tempore ab mollitia, ratione deleniti asperiores dolorem ex quo nemo cum voluptas placeat. Ex reprehenderit eius vero voluptatem quaerat possimus numquam cumque nam. Modi nemo nulla corporis maiores facere aliquam infor..... <span>Show More</span></p>
-              </div>
-              <div className="box4-div3">
-                <FaThumbsUp className="icon" />
-                <span className="like-text">Like</span>
-                <FaCommentDots className="icon" />
-                <input type="text" className="comment-input" placeholder="Add a comment" />
-                <button className="post-button">Post</button>
-              </div>
             </div>
-          </div>
 
-          <div className="box box5" >
-            <div className="firstrow">
-              <div className="f1" style={{ display: showF1 ? 'flex' : 'none' }}>
-                <div className="text1"><span onClick={handleReportIssueClick}>Report an Issue</span></div>
-                <div className="icon1"><FaFlag onClick={handleReportIssueClick} /></div>
-              </div>
-              <div className="f1" style={{ display: showF1 ? 'flex' : 'none' }}>
-                <div className="text1"><span onClick={handleVscFeedbackClick}>Share Feedback</span></div>
-                <div className="icon1"><VscFeedback onClick={handleVscFeedbackClick} /></div>
-              </div>
-              <div className="f1" style={{ display: showF1 ? 'flex' : 'none' }}>
-                <div className="text1"><span onClick={handleCiEditClick}>Give Suggestion</span></div>
-                <div className="icon1"><CiEdit onClick={handleCiEditClick} /></div>
-              </div>
-              <div className="f1" style={{ display: showF1 ? 'flex' : 'none' }}>
-                <div className="text1"><span onClick={handleRiContactsFillClick}>Contact Us</span></div>
-                <div className="icon1"><RiContactsFill onClick={handleRiContactsFillClick} /></div>
-              </div>
-            </div>
-            <div className="secondrow">
-              {showIcon && (
-                <div className="icon1">
-                  {showHelpIcon ? (
-                    <IoDocumentText className='helpicon' onClick={handleIconClick} />
-                  ) : (
-                    <FaTimes className='helpicon' onClick={handleIconClick} />
-                  )}
+            <div className="box box5" >
+              <div className="firstrow">
+                <div className="f1" style={{ display: showF1 ? 'flex' : 'none' }}>
+                  <div className="text1"><span onClick={handleReportIssueClick}>Report an Issue</span></div>
+                  <div className="icon1"><FaFlag onClick={handleReportIssueClick} /></div>
                 </div>
-              )}
+                <div className="f1" style={{ display: showF1 ? 'flex' : 'none' }}>
+                  <div className="text1"><span onClick={handleVscFeedbackClick}>Share Feedback</span></div>
+                  <div className="icon1"><VscFeedback onClick={handleVscFeedbackClick} /></div>
+                </div>
+                <div className="f1" style={{ display: showF1 ? 'flex' : 'none' }}>
+                  <div className="text1"><span onClick={handleCiEditClick}>Give Suggestion</span></div>
+                  <div className="icon1"><CiEdit onClick={handleCiEditClick} /></div>
+                </div>
+                <div className="f1" style={{ display: showF1 ? 'flex' : 'none' }}>
+                  <div className="text1"><span onClick={handleRiContactsFillClick}>Contact Us</span></div>
+                  <div className="icon1"><RiContactsFill onClick={handleRiContactsFillClick} /></div>
+                </div>
+              </div>
+              <div className="secondrow">
+                {showIcon && (
+                  <div className="icon1">
+                    {showHelpIcon ? (
+                      <IoDocumentText className='helpicon' onClick={handleIconClick} />
+                    ) : (
+                      <FaTimes className='helpicon' onClick={handleIconClick} />
+                    )}
+                  </div>
+                )}
+              </div>
             </div>
+
+            <Feedback
+           
+              showFeedback={showFeedback}
+              showFeedback2={showFeedback2}
+              showFeedback3={showFeedback3}
+              showFeedback4={showFeedback4}
+              feedbackText={feedbackText}
+              setFeedbackText={setFeedbackText}
+              handleFeedbackChange={handleFeedbackChange}
+              handleSubmitClick={handleSubmitClick}
+              handleSubmitClick2={handleSubmitClick2}
+              handleSubmitClick3={handleSubmitClick3}
+              handleSubmitClick4={handleSubmitClick4}
+              handleReportIssueClick={handleReportIssueClick}
+              handleVscFeedbackClick={handleVscFeedbackClick}
+              handleCiEditClick={handleCiEditClick}
+              handleRiContactsFillClick={handleRiContactsFillClick}
+              handleCloseFeedbackClick={handleCloseFeedbackClick}
+              Contact1={Contact1}
+              Contact2={Contact2}
+              Contact3={Contact3}
+              Contact4={Contact4}
+              handleContact1={handleContact1}
+              handleContact2={handleContact2}
+              handleContact3={handleContact3}
+              handleContact4={handleContact4}
+            />
+            <ToastContainer />
           </div>
-
-          <Feedback
-            showFeedback={showFeedback}
-            showFeedback2={showFeedback2}
-            showFeedback3={showFeedback3}
-            showFeedback4={showFeedback4}
-            feedbackText={feedbackText}
-            setFeedbackText={setFeedbackText}
-            handleFeedbackChange={handleFeedbackChange}
-            handleSubmitClick={handleSubmitClick}
-            handleSubmitClick2={handleSubmitClick2}
-            handleSubmitClick3={handleSubmitClick3}
-            handleSubmitClick4={handleSubmitClick4}
-            handleReportIssueClick={handleReportIssueClick}
-            handleVscFeedbackClick={handleVscFeedbackClick}
-            handleCiEditClick={handleCiEditClick}
-            handleRiContactsFillClick={handleRiContactsFillClick}
-            handleCloseFeedbackClick={handleCloseFeedbackClick}
-            Contact1={Contact1}
-            Contact2={Contact2}
-            Contact3={Contact3}
-            Contact4={Contact4}
-            handleContact1={handleContact1}
-            handleContact2={handleContact2}
-            handleContact3={handleContact3}
-            handleContact4={handleContact4}
-          />
-
-         
-          <div className="andbox">
+          <div className="andbox" style={{ opacity: showF1 ? '1' : '1' }}>
             <div className="firstrowa">
               <div className="fa1" style={{ display: showF1 ? 'flex' : 'none' }}>
                 <div className="texta1"><span onClick={handleReportIssueClick}>Report an Issue</span></div>
@@ -352,7 +355,6 @@ function App() {
               )}
             </div>
           </div>
-          <ToastContainer />
         </main>
       </div>
     </div>

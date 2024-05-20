@@ -11,10 +11,12 @@ const Feedback = ({
     handleSubmitClick, handleSubmitClick2, handleSubmitClick3, handleSubmitClick4,
     handleReportIssueClick, handleVscFeedbackClick, handleCiEditClick, handleRiContactsFillClick,
     handleCloseFeedbackClick, Contact1, Contact2, Contact3, Contact4, handleContact1, handleContact2, handleContact3, handleContact4
-}) => {
+}) =>
+    
+    {
     return (
         <>
-            <div className="feedback1" style={{ display: showFeedback ? 'flex' : 'none' }}>
+            <div className="feedback1" style={{ display: showFeedback ? 'flex' : 'none'}}>
                 <div className="anoption1">
                     <div className="icon2"><FaFlag onClick={handleReportIssueClick} /></div>
                     <div className="icon2"><VscFeedback onClick={handleVscFeedbackClick} /></div>

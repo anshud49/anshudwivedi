@@ -16,7 +16,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #333;
+  
 }
 
 .header-left {
@@ -984,7 +984,7 @@ body {
     align-items: center;
     color: black;
     bottom: 100px;
-    right: 0;
+    right: 10px;
 
   }
 
@@ -1011,14 +1011,15 @@ body {
   }
 
 
-  .feedback1 {
+  .feedback1 
+  {
     position: fixed;
     height: 55vh;
     width: 100%;
-    bottom: 0vh;
+    bottom: 0;
     right: 0;
   }
-
+  
   .feedback2 {
     position: fixed;
     height: 45vh;
