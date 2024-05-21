@@ -27,7 +27,7 @@ function App() {
   const [overlay, setOverlay] = useState(false);
   const [isAnonymous, setIsAnonymous] = useState(false);
 
-
+  
   const handleIconClick = () => {
     setShowF1(prevShowF1 => !prevShowF1);
     setShowHelpIcon(prevShowHelpIcon => !prevShowHelpIcon);
@@ -341,6 +341,7 @@ function App() {
               <ToastContainer />
             </div>
             <Feedback
+              windowWidth={windowWidth}
                 isAnonymous={isAnonymous}
                 handleCheckboxChange={handleCheckboxChange}
                 showFeedback={showFeedback}

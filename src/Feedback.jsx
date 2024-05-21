@@ -6,7 +6,7 @@ import { RiContactsFill } from 'react-icons/ri';
 import { IoIosAttach } from 'react-icons/io';
 
 const Feedback = ({
-    isAnonymous,handleCheckboxChange, showFeedback, showFeedback2, showFeedback3, showFeedback4,
+    windowWidth, isAnonymous,handleCheckboxChange, showFeedback, showFeedback2, showFeedback3, showFeedback4,
     feedbackText, setFeedbackText, handleFeedbackChange,
     handleSubmitClick, handleSubmitClick2, handleSubmitClick3, handleSubmitClick4,
     handleReportIssueClick, handleVscFeedbackClick, handleCiEditClick, handleRiContactsFillClick,
@@ -16,7 +16,7 @@ const Feedback = ({
     {
     return (
         <>
-            <div className="feedback1" style={{ display: showFeedback ? 'flex' : 'none' }}>
+           <div className={`feedback1 ${showFeedback && windowWidth < 451 ? 'show' : ''}`} style={{ display: showFeedback ? 'flex' : 'none' }}>
                 <div className="anoption1">
                     <div className="ellipse"><FaFlag onClick={handleReportIssueClick} /></div>
                     <div className="icon2"><VscFeedback onClick={handleVscFeedbackClick} /></div>
