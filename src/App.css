@@ -8,7 +8,7 @@ body {
   color: white;
   position: relative;
   width: 100%;
-  height: 110vh;
+  height: 100vh;
 }
 
 .header {
@@ -16,8 +16,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  width: 100%;
-  box-sizing: border-box;
+  width: calc(100% - 2rem);
 }
 
 .header-left {
@@ -212,7 +211,7 @@ body {
   width: 100%;
 }
 
-.dropdownr {
+.dropdownr{
   font-size: 15px;
   margin-left: 4px;
   padding: 4px;
@@ -556,6 +555,7 @@ body {
 .anddropdown3,
 .anddropdown4 {
   width: 90%;
+  padding: 10px;
   border: 1px solid #ddd;
   background-color: #ddd;
   border-radius: 5px;
@@ -677,7 +677,7 @@ body {
   left: 7px;
 }
 
-.attach-button2 {
+.attach-button2{
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -725,8 +725,8 @@ body {
   justify-content: center;
   opacity: 0.7;
 }
-
-.submit-button {
+.submit-button
+{
   right: 0;
   bottom: -60px;
 }
@@ -790,8 +790,8 @@ body {
   cursor: pointer;
   margin: 0 10px;
 }
-
-.loginf2 {
+.loginf2
+{
   margin-top: 10px;
 }
 
@@ -864,14 +864,12 @@ body {
   justify-content: center;
   opacity: 0.7;
 }
-
 .submit-button3 {
   bottom: -50px;
   right: 0px;
 }
-
 .add {
-  width: 100%;
+  width:100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -924,23 +922,23 @@ body {
     bottom: 8vh;
     right: 8vh;
   }
-
-  .feedback1 {
+  .feedback1
+  {
     bottom: 8vh;
     right: 5vh;
   }
-
-  .feedback2 {
+  .feedback2
+  {
     bottom: 8vh;
     right: 5vh;
   }
-
-  .feedback3 {
+  .feedback3
+  {
     bottom: 8vh;
     right: 5vh;
   }
-
-  .feedback4 {
+  .feedback4
+  {
     bottom: 8vh;
     right: 5vh;
   }
@@ -951,23 +949,23 @@ body {
     bottom: 8vh;
     right: 0vh;
   }
-
-  .feedback1 {
+  .feedback1
+  {
     bottom: 8vh;
     right: 5vh;
   }
-
-  .feedback2 {
+  .feedback2
+  {
     bottom: 8vh;
     right: 5vh;
   }
-
-  .feedback3 {
+  .feedback3
+  {
     bottom: 8vh;
     right: 5vh;
   }
-
-  .feedback4 {
+  .feedback4
+  {
     bottom: 8vh;
     right: 5vh;
   }
@@ -979,22 +977,23 @@ body {
     right: 0vh;
   }
 
-  .feedback1 {
+  .feedback1
+  {
     bottom: 8vh;
     right: 5vh;
   }
-
-  .feedback2 {
+  .feedback2
+  {
     bottom: 8vh;
     right: 5vh;
   }
-
-  .feedback3 {
+  .feedback3
+  {
     bottom: 8vh;
     right: 5vh;
   }
-
-  .feedback4 {
+  .feedback4
+  {
     bottom: 8vh;
     right: 5vh;
   }
@@ -1009,16 +1008,17 @@ body {
     font-size: 14px;
   }
 }
-
-@media (max-width: 460px) {
-  .platform-text {
+@media (max-width: 460px)
+{
+  .platform-text
+  {
     font-size: 12px;
   }
-  .app {
+  .app
+  {
     height: 100%;
   }
 }
-
 @media (max-width: 450px) {
 
   .header {
@@ -1283,13 +1283,13 @@ body {
   .submit-button3 {
     position: absolute;
     right: 55px;
-    bottom: -60px;
+    bottom:-60px;
   }
 
   .submit-button4 {
     position: absolute;
     right: 50px;
-    bottom: -45px;
+    bottom: -50px;
   }
 
   .input-textarea,
@@ -1315,4 +1315,3 @@ body {
     width: 90%;
   }
 }
-
