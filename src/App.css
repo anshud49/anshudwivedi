@@ -22,6 +22,7 @@ body {
 .header-left {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .platform-text {
@@ -33,6 +34,7 @@ body {
 .header-right {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .header-item {
@@ -108,7 +110,6 @@ body {
   color: black;
   padding: 20px;
   border-radius: 5px;
-
 }
 
 .box1-div1 {
@@ -875,21 +876,50 @@ body {
     transform: translateY(0);
   }
 }
+
 .feedback1 {
   transition: transform 0.5s ease-in-out;
 }
+
 .feedback2 {
   transition: transform 0.5s ease-in-out;
 }
+
 .feedback3 {
   transition: transform 0.5s ease-in-out;
 }
+
 .feedback4 {
   transition: transform 0.5s ease-in-out;
 }
 
 .slide-up {
   animation: slideUp 0.5s forwards;
+}
+
+@media (max-width: 960px) {
+  .box5 {
+    
+    bottom: 8vh;
+    right: 8vh;
+   
+  }
+}
+@media (max-width: 820px) {
+  .box5 {
+    
+    bottom: 8vh;
+    right: 0vh;
+   
+  }
+}
+@media (max-width: 610px) {
+  .box5 {
+    
+    bottom: 8vh;
+    right: 0vh;
+   
+  }
 }
 
 @media (max-width: 550px) {
@@ -1053,7 +1083,7 @@ body {
     align-items: center;
     color: black;
     bottom: 100px;
-    right: 10px;
+    right: 18px;
 
   }
 
@@ -1109,6 +1139,7 @@ body {
     transform: translateY(0);
     animation: slideUp 0.5s forwards;
   }
+
   .feedback2 {
     position: fixed;
     height: 45vh;
@@ -1117,6 +1148,7 @@ body {
     right: 0;
     transform: translateY(100%);
   }
+
   .feedback2.show {
     transform: translateY(0);
     animation: slideUp 0.5s forwards;
@@ -1130,10 +1162,12 @@ body {
     right: 0;
     transform: translateY(100%);
   }
+
   .feedback3.show {
     transform: translateY(0);
     animation: slideUp 0.5s forwards;
   }
+
   .feedback4 {
     position: fixed;
     height: 60vh;
@@ -1142,6 +1176,7 @@ body {
     right: 0;
     transform: translateY(100%);
   }
+
   .feedback4.show {
     transform: translateY(0);
     animation: slideUp 0.5s forwards;
