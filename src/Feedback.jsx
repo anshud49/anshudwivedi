@@ -16,18 +16,21 @@ const Feedback = ({
     {
     return (
         <>
-            <div className="feedback1" style={{ display: showFeedback ? 'flex' : 'none'}}>
+            <div className="feedback1" style={{ display: showFeedback ? 'flex' : 'none' }}>
                 <div className="anoption1">
-                    <div className="icon2"><FaFlag onClick={handleReportIssueClick} /></div>
+                    <div className="ellipse"><FaFlag onClick={handleReportIssueClick} /></div>
                     <div className="icon2"><VscFeedback onClick={handleVscFeedbackClick} /></div>
                     <div className="icon2"><CiEdit onClick={handleCiEditClick} /></div>
                     <div className="icon2"><RiContactsFill onClick={handleRiContactsFillClick} /></div>
                     <div className="icon2" onClick={handleCloseFeedbackClick}><FaTimes /></div>
                 </div>
+               
                 <div className="textarea">
                     <div className="feedback1-text">
                         <span>Let us know about the issue you are facing right now!</span>
+                        <hr style={{ height: '1px', marginTop: '20px', borderWidth: 0, color: 'red', backgroundColor: '#bfbfbf', zIndex: '1' }} />
                     </div>
+                 
                     <div className="feedback1-inputs">
                         <div className="section">
                             <span>Choose a section</span>
@@ -56,7 +59,7 @@ const Feedback = ({
                 </div>
 
                 <div className="anoption">
-                    <div className="icon2"><FaFlag onClick={handleReportIssueClick} /></div>
+                    <div className="ellipse"><FaFlag onClick={handleReportIssueClick} /></div>
                     <div className="icon2"><VscFeedback onClick={handleVscFeedbackClick} /></div>
                     <div className="icon2"><CiEdit onClick={handleCiEditClick} /></div>
                     <div className="icon2"><RiContactsFill onClick={handleRiContactsFillClick} /></div>
@@ -67,7 +70,7 @@ const Feedback = ({
             <div className="feedback2" style={{ display: showFeedback2 ? 'flex' : 'none' }}>
             <div className="anoption1">
                     <div className="icon2"><FaFlag onClick={handleReportIssueClick} /></div>
-                    <div className="icon2"><VscFeedback onClick={handleVscFeedbackClick} /></div>
+                    <div className="ellipse"><VscFeedback onClick={handleVscFeedbackClick} /></div>
                     <div className="icon2"><CiEdit onClick={handleCiEditClick} /></div>
                     <div className="icon2"><RiContactsFill onClick={handleRiContactsFillClick} /></div>
                     <div className="icon2" onClick={handleCloseFeedbackClick}><FaTimes /></div>
@@ -75,6 +78,7 @@ const Feedback = ({
                 <div className="textarea2">
                     <div className="feedback2-text">
                         <span>Let us know your Feedback about us!</span>
+                        <hr style={{ height: '1px', marginTop: '20px', borderWidth: 0, color: 'red', backgroundColor: '#bfbfbf', zIndex: '1' }} />
                     </div>
                     <div className="feedback2-inputs">
                         <div className="detail2">
@@ -99,7 +103,7 @@ const Feedback = ({
 
                 <div className="anoption2">
                     <div className="icon22"><FaFlag onClick={handleReportIssueClick} /></div>
-                    <div className="icon22"><VscFeedback onClick={handleVscFeedbackClick} /></div>
+                    <div className="ellipse"><VscFeedback onClick={handleVscFeedbackClick} /></div>
                     <div className="icon22"><CiEdit onClick={handleCiEditClick} /></div>
                     <div className="icon22"><RiContactsFill onClick={handleRiContactsFillClick} /></div>
                     <div className="icon22" onClick={handleCloseFeedbackClick}><FaTimes /></div>
@@ -110,13 +114,14 @@ const Feedback = ({
             <div className="anoption1">
                     <div className="icon2"><FaFlag onClick={handleReportIssueClick} /></div>
                     <div className="icon2"><VscFeedback onClick={handleVscFeedbackClick} /></div>
-                    <div className="icon2"><CiEdit onClick={handleCiEditClick} /></div>
+                    <div className="ellipse"><CiEdit onClick={handleCiEditClick} /></div>
                     <div className="icon2"><RiContactsFill onClick={handleRiContactsFillClick} /></div>
                     <div className="icon2" onClick={handleCloseFeedbackClick}><FaTimes /></div>
                 </div>
                 <div className="textarea3">
                     <div className="feedback3-text">
                         <span>Share your Suggestions with us for a chance to earn rewards!</span>
+                        <hr style={{ height: '1px', marginTop: '20px', borderWidth: 0, color: 'red', backgroundColor: '#bfbfbf', zIndex: '1' }} />
                     </div>
                     <div className="feedback3-inputs">
                         <div className="section3">
@@ -144,7 +149,7 @@ const Feedback = ({
                 <div className="anoption3">
                     <div className="icon3"><FaFlag onClick={handleReportIssueClick} /></div>
                     <div className="icon3"><VscFeedback onClick={handleVscFeedbackClick} /></div>
-                    <div className="icon3"><CiEdit onClick={handleCiEditClick} /></div>
+                    <div className="ellipse"><CiEdit onClick={handleCiEditClick} /></div>
                     <div className="icon3"><RiContactsFill onClick={handleRiContactsFillClick} /></div>
                     <div className="icon3" onClick={handleCloseFeedbackClick}><FaTimes /></div>
                 </div>
@@ -155,12 +160,13 @@ const Feedback = ({
                     <div className="icon2"><FaFlag onClick={handleReportIssueClick} /></div>
                     <div className="icon2"><VscFeedback onClick={handleVscFeedbackClick} /></div>
                     <div className="icon2"><CiEdit onClick={handleCiEditClick} /></div>
-                    <div className="icon2"><RiContactsFill onClick={handleRiContactsFillClick} /></div>
+                    <div className="ellipse"><RiContactsFill onClick={handleRiContactsFillClick} /></div>
                     <div className="icon2" onClick={handleCloseFeedbackClick}><FaTimes /></div>
                 </div>
                 <div className="textarea4">
                     <div className="feedback4-text">
                         <span>Let us know what your queries are!</span>
+                        <hr style={{ height: '1px', marginTop: '20px', borderWidth: 0, color: 'red', backgroundColor: '#bfbfbf', zIndex: '1' }} />
                     </div>
                     <div className="feedback4-inputs">
 
@@ -191,7 +197,7 @@ const Feedback = ({
                     <div className="icon4"><FaFlag onClick={handleReportIssueClick} /></div>
                     <div className="icon4"><VscFeedback onClick={handleVscFeedbackClick} /></div>
                     <div className="icon4"><CiEdit onClick={handleCiEditClick} /></div>
-                    <div className="icon4"><RiContactsFill onClick={handleRiContactsFillClick} /></div>
+                    <div className="ellipse"><RiContactsFill onClick={handleRiContactsFillClick} /></div>
                     <div className="icon4" onClick={handleCloseFeedbackClick}><FaTimes /></div>
                 </div>
             </div>
