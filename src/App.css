@@ -16,9 +16,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  /* Use relative units */
   width: calc(100% - 2rem);
-  /* Adjust width based on padding */
 }
 
 .header-left {
@@ -71,7 +69,6 @@ body {
   align-items: center;
   position: absolute;
   top: 80px;
-  /* Adjust the value to provide margin from the header */
   left: 20px;
   color: white;
   cursor: pointer;
@@ -102,7 +99,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
   gap: 20px;
   max-width: 600px;
 }
@@ -201,7 +197,6 @@ body {
   align-items: center;
   padding: 10px 10px;
   background-color: black;
-  /* Same as body background color */
   color: white;
 
 }
@@ -368,7 +363,7 @@ body {
   background-color: white;
   font-size: 13px;
   font-weight: bold;
-  opacity: .8;
+  opacity: 1;
   padding: 4px 4px;
   border-radius: 4px;
   margin: 0 16px;
@@ -391,17 +386,6 @@ body {
   z-index: 1;
 }
 
-/* .icon1::before
-{
-    position:absolute;
-    width:41px;
-    height: 41px;
-    background-color:transparent;
-    border:2px solid #808080;
-    border-radius: 50%;
-    content: "";
-    z-index: -1;
-} */
 
 .helpicon,
 .helpicona {
@@ -848,7 +832,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  /* Adjust as needed */
   margin-bottom: 20px;
   width: 100%;
 }
@@ -1082,7 +1065,6 @@ body {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    /* max-width: 300px; */
     margin: 0 5px;
   }
 
@@ -1175,9 +1157,6 @@ body {
   }
 
 
-
-  
-
   .andbox {
     position: fixed;
     height: 40vh;
@@ -1204,7 +1183,6 @@ body {
   }
 
   .andicona1 {
-
     color: white;
     background-color: black;
   }

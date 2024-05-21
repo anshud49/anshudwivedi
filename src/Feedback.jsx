@@ -7,7 +7,7 @@ import { IoIosAttach } from 'react-icons/io';
 
 const Feedback = ({
     handleandFeedbackChange, andfeedbackText, isLogin, windowWidth, isAnonymous, handleCheckboxChange, showFeedback, showFeedback2, showFeedback3, showFeedback4,
-    feedbackText, setFeedbackText, handleFeedbackChange,
+    feedbackText,  handleFeedbackChange,
     handleSubmitClick, handleSubmitClick2, handleSubmitClick3, handleSubmitClick4,
     handleReportIssueClick, handleVscFeedbackClick, handleCiEditClick, handleRiContactsFillClick,
     handleCloseFeedbackClick, Contact1, Contact2, Contact3, Contact4, handleContact1, handleContact2, handleContact3, handleContact4

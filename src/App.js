@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from 'react';
-import { FaChevronDown, FaUserCircle, FaArrowLeft, FaEye, FaInfoCircle, FaPencilAlt, FaThumbsUp, FaCommentDots, FaFlag, FaTimes } from 'react-icons/fa';
-import { IoDocumentText } from "react-icons/io5";
-import { VscFeedback } from "react-icons/vsc";
-import { CiEdit } from "react-icons/ci";
-import { RiContactsFill } from "react-icons/ri";
+import { 
+  FaChevronDown, FaUserCircle, FaArrowLeft, FaEye, FaInfoCircle, 
+  FaPencilAlt, FaThumbsUp, FaCommentDots, FaFlag, FaTimes 
+} from 'react-icons/fa';
+import { IoDocumentText } from 'react-icons/io5';
+import { VscFeedback } from 'react-icons/vsc';
+import { CiEdit } from 'react-icons/ci';
+import { RiContactsFill } from 'react-icons/ri';
+import { AiOutlineMenuUnfold } from 'react-icons/ai';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { AiOutlineMenuUnfold } from "react-icons/ai";
 import Feedback from './Feedback';
 import './App.css';
 
@@ -28,16 +31,15 @@ function App() {
   const [isAnonymous, setIsAnonymous] = useState(false);
   const [andfeedbackText, setandFeedbackText] = useState('');
  
-  //for not signed in user, make isLogin true
-  const [isLogin, setLogin] = useState(false);
+  /////////////////for not signed in user, make isLogin true///////////////////////
+  const [isLogin, setLogin] = useState(true);
 
   const handleLogin = () => {
-
     setLogin(false);
     setLogin(true);
   };
 
-  /////////
+  //////////////// use handleLogin in Login page ///////////////////////////
 
   const handleIconClick = () => {
     setShowF1(prevShowF1 => !prevShowF1);
@@ -372,7 +374,6 @@ function App() {
             showFeedback3={showFeedback3}
             showFeedback4={showFeedback4}
             feedbackText={feedbackText}
-            setFeedbackText={setFeedbackText}
             handleFeedbackChange={handleFeedbackChange}
             handleSubmitClick={handleSubmitClick}
             handleSubmitClick2={handleSubmitClick2}
