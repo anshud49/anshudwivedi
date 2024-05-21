@@ -89,6 +89,7 @@ function App() {
       setShowicon(true);
       setFeedbackText('');
       setIsAnonymous(false);
+      setOverlay(false);
       toast.success("Thanks for sharing your valuable feedback");
     }
   };
@@ -102,6 +103,7 @@ function App() {
       setShowF1(false);
       setShowicon(true);
       setFeedbackText('');
+      setOverlay(false);
       toast.success("Thanks for suggestions");
     }
   };
@@ -119,6 +121,7 @@ function App() {
       setShowF1(false);
       setShowicon(true);
       setFeedbackText('');
+      setOverlay(false);
       toast.success("Thanks for suggestions");
     }
   };
