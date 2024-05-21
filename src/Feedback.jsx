@@ -6,7 +6,7 @@ import { RiContactsFill } from 'react-icons/ri';
 import { IoIosAttach } from 'react-icons/io';
 
 const Feedback = ({
-    showFeedback, showFeedback2, showFeedback3, showFeedback4,
+    isAnonymous,handleCheckboxChange, showFeedback, showFeedback2, showFeedback3, showFeedback4,
     feedbackText, setFeedbackText, handleFeedbackChange,
     handleSubmitClick, handleSubmitClick2, handleSubmitClick3, handleSubmitClick4,
     handleReportIssueClick, handleVscFeedbackClick, handleCiEditClick, handleRiContactsFillClick,
@@ -43,7 +43,7 @@ const Feedback = ({
 
                         <div className="detail">
                             <span>Describe the issue in detail <span className='imp' style={{ color: 'red' }}>*</span></span>
-                            <textarea className="input-textarea" value={feedbackText} onChange={handleFeedbackChange}></textarea>
+                            <textarea className="input-textarea" value={feedbackText} onChange={handleFeedbackChange} ></textarea>
 
                             <button className="attach-button">
                                 <IoIosAttach className="attach-icon" />
@@ -94,7 +94,7 @@ const Feedback = ({
                         </div>
 
                         <div className="loginf2">
-                            <input type="checkbox" name="" id="" />
+                            <input type="checkbox" checked={isAnonymous}  name="" id=""  onChange={handleCheckboxChange}/>
                             <span >Send anonymously</span>
                         </div>
 

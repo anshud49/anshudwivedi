@@ -25,6 +25,8 @@ function App() {
   const [Contact3, setContact3] = useState('');
   const [Contact4, setContact4] = useState('');
   const [overlay, setOverlay] = useState(false);
+  const [isAnonymous, setIsAnonymous] = useState(false);
+
 
   const handleIconClick = () => {
     setShowF1(prevShowF1 => !prevShowF1);
@@ -47,6 +49,7 @@ function App() {
 
   const handleFeedbackChange = (e) => {
     setFeedbackText(e.target.value);
+
   };
   const handleContact1 = (e) => {
     setContact1(e.target.value);
@@ -71,6 +74,7 @@ function App() {
       setShowF1(false);
       setShowicon(true);
       setOverlay(false);
+      setFeedbackText('');
       toast.success("Thanks for bringing the issue to our attention. We'll review it shortly and provide an update soon");
     }
   };
@@ -83,6 +87,8 @@ function App() {
       setShowHelpIcon(true);
       setShowF1(false);
       setShowicon(true);
+      setFeedbackText('');
+      setIsAnonymous(false);
       toast.success("Thanks for sharing your valuable feedback");
     }
   };
@@ -95,6 +101,7 @@ function App() {
       setShowHelpIcon(true);
       setShowF1(false);
       setShowicon(true);
+      setFeedbackText('');
       toast.success("Thanks for suggestions");
     }
   };
@@ -105,8 +112,13 @@ function App() {
       setShowFeedback3(false);
       setShowFeedback4(false);
       setShowHelpIcon(true);
+      setContact1('');
+      setContact2('');
+      setContact3('');
+      setContact4('');
       setShowF1(false);
       setShowicon(true);
+      setFeedbackText('');
       toast.success("Thanks for suggestions");
     }
   };
@@ -142,6 +154,9 @@ function App() {
     setShowF1(false);
     setShowicon(false);
     setOverlay(true);
+  };
+  const handleCheckboxChange = (e) => {
+    setIsAnonymous(e.target.checked);
   };
   const handleRiContactsFillClick = () => {
     setShowFeedback4(true);
@@ -319,7 +334,8 @@ function App() {
               <ToastContainer />
             </div>
             <Feedback
-
+                isAnonymous={isAnonymous}
+                handleCheckboxChange={handleCheckboxChange}
                 showFeedback={showFeedback}
                 showFeedback2={showFeedback2}
                 showFeedback3={showFeedback3}
