@@ -271,7 +271,7 @@ function App() {
                   <div className="right-section">
                     <span className="right-text">Sort by:</span>
                     <select className="dropdownr">
-                      <option value="latest" >Popular</option>
+                      <option value="Popular" >Popular</option>
                       <option value="latest">Latest</option>
                       <option value="oldest">Oldest</option>
                       <option value="upvotes">Upvotes</option>
