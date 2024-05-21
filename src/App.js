@@ -242,7 +242,11 @@ function App() {
                 <div className="box1-div1">
                   <span className="badge">Design</span>
                   <span className="badge">Technology</span>
+                  <div className="rocketicon">
                   <span className="rocket">🚀</span>
+                  <span className="startup">Startup</span>
+                  </div>
+                  
                 </div>
                 <div className="box1-div2">
                   <p>What are the key considerations when designing a user-friendly interface for a mobile application?</p>

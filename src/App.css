@@ -16,7 +16,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  
+
 }
 
 .header-left {
@@ -41,12 +41,13 @@ body {
   align-items: center;
   cursor: pointer;
 }
-.highlight
-{
+
+.highlight {
   background-color: white;
   color: black;
-  padding:2px 2px;
+  padding: 2px 2px;
 }
+
 .down-arrow {
   margin-left: 5px;
 }
@@ -90,6 +91,7 @@ body {
   justify-content: center;
   padding-top: 100px;
   height: calc(100% - 160px);
+  padding: 10px 10px;
 }
 
 .main-content {
@@ -123,10 +125,20 @@ body {
   margin-right: 10px;
 }
 
+.rocketicon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .rocket {
-  margin-left: auto;
-  /* Push the rocket emoji to the right */
-  font-size: 20px;
+  font-size: 25px;
+}
+
+.startup {
+  font-size: 12px;
+  opacity: .7;
 }
 
 .box1-div2 p {
@@ -361,7 +373,8 @@ body {
 }
 
 .icon1,
-.icona1,.cross {
+.icona1,
+.cross {
   position: relative;
   width: 38px;
   height: 38px;
@@ -489,7 +502,8 @@ body {
   color: black;
 }
 
-.feedback1-text,.feedback2-text,
+.feedback1-text,
+.feedback2-text,
 .feedback3-text,
 .feedback4-text {
   margin-bottom: 10px;
@@ -735,7 +749,8 @@ body {
 
 .icon2,
 .icon3,
-.icon4,.ellipse {
+.icon4,
+.ellipse {
   width: 38px;
   height: 38px;
   font-size: 20px;
@@ -747,13 +762,13 @@ body {
   cursor: pointer;
   margin: 0 10px;
 }
-.ellipse::before
-{
-  position:absolute;
-  width:40px;
+
+.ellipse::before {
+  position: absolute;
+  width: 40px;
   height: 40px;
-  background-color:transparent;
-  border:2px solid #808080;
+  background-color: transparent;
+  border: 2px solid #808080;
   border-radius: 50%;
   content: "";
   z-index: -1;
@@ -862,13 +877,29 @@ body {
 }
 
 @media (max-width: 450px) {
-  
-  .highlight
-{
-  color: white;
-  background-color: black;
-  padding:0px 0px;
-}
+
+  .rocketicon {
+    flex-direction: row;
+  }
+
+  .rocket {
+    font-size: 25px;
+    opacity: .8;
+    margin:0px 2px;
+  }
+
+  .startup {
+    font-size: 12px;
+    margin:0px 2px;
+    opacity: .7;
+  }
+
+  .highlight {
+    color: white;
+    background-color: black;
+    padding: 0px 0px;
+  }
+
   .back-to-questions,
   .box5,
   .header-item {
@@ -999,20 +1030,21 @@ body {
     margin-top: 30px;
   }
 
-  .icona1,.cross {
+  .icona1,
+  .cross {
     float: right;
-    
+
   }
+
   .andicona1 {
-    
+
     color: white;
     background-color: black;
   }
 
-  .cross
-  {
+  .cross {
     background-color: white;
-     color: black;
+    color: black;
   }
 
   .anoption,
@@ -1030,15 +1062,14 @@ body {
   }
 
 
-  .feedback1 
-  {
+  .feedback1 {
     position: fixed;
     height: 55vh;
     width: 100%;
     bottom: 0;
     right: 0;
   }
-  
+
   .feedback2 {
     position: fixed;
     height: 45vh;
@@ -1066,25 +1097,25 @@ body {
   .submit-button {
     position: absolute;
     right: 40px;
-    bottom:-50px;
+    bottom: -50px;
   }
 
   .submit-button2 {
     position: absolute;
     right: 40px;
-    bottom:-50px;
+    bottom: -50px;
   }
 
   .submit-button3 {
     position: absolute;
     right: 40px;
-    bottom:-50px;
+    bottom: -50px;
   }
 
   .submit-button4 {
     position: absolute;
     right: 45px;
-    bottom:-50px;
+    bottom: -50px;
   }
 
   .input-textarea,
@@ -1093,14 +1124,16 @@ body {
     width: 84%;
 
   }
-  .input-textarea4
-  {
+
+  .input-textarea4 {
     width: 88%;
     overflow-y: hidden;
   }
-  .feedback1-text,.feedback2-text,
+
+  .feedback1-text,
+  .feedback2-text,
   .feedback3-text,
   .feedback4-text {
-   width:90%;
+    width: 90%;
   }
 }
