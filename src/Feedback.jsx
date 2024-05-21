@@ -67,7 +67,7 @@ const Feedback = ({
                 </div>
             </div>
 
-            <div className="feedback2" style={{ display: showFeedback2 ? 'flex' : 'none' }}>
+            <div className={`feedback2 ${showFeedback2 && windowWidth < 451 ? 'show' : ''}`} style={{ display: showFeedback2 ? 'flex' : 'none' }}>
             <div className="anoption1">
                     <div className="icon2"><FaFlag onClick={handleReportIssueClick} /></div>
                     <div className="ellipse"><VscFeedback onClick={handleVscFeedbackClick} /></div>
@@ -109,8 +109,8 @@ const Feedback = ({
                     <div className="icon22" onClick={handleCloseFeedbackClick}><FaTimes /></div>
                 </div>
             </div>
-
-            <div className="feedback3" style={{ display: showFeedback3 ? 'flex' : 'none' }}>
+             
+            <div className={`feedback3 ${showFeedback3 && windowWidth < 451 ? 'show' : ''}`} style={{ display: showFeedback3 ? 'flex' : 'none' }}>
             <div className="anoption1">
                     <div className="icon2"><FaFlag onClick={handleReportIssueClick} /></div>
                     <div className="icon2"><VscFeedback onClick={handleVscFeedbackClick} /></div>
@@ -155,7 +155,7 @@ const Feedback = ({
                 </div>
             </div>
 
-            <div className="feedback4" style={{ display: showFeedback4 ? 'flex' : 'none' }}>
+            <div className={`feedback4 ${showFeedback4 && windowWidth < 451 ? 'show' : ''}`} style={{ display: showFeedback4 ? 'flex' : 'none' }}>
             <div className="anoption1">
                     <div className="icon2"><FaFlag onClick={handleReportIssueClick} /></div>
                     <div className="icon2"><VscFeedback onClick={handleVscFeedbackClick} /></div>
