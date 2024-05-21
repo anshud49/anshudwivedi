@@ -6,17 +6,15 @@ import { RiContactsFill } from 'react-icons/ri';
 import { IoIosAttach } from 'react-icons/io';
 
 const Feedback = ({
-    windowWidth, isAnonymous,handleCheckboxChange, showFeedback, showFeedback2, showFeedback3, showFeedback4,
+    handleandFeedbackChange, andfeedbackText, isLogin, windowWidth, isAnonymous, handleCheckboxChange, showFeedback, showFeedback2, showFeedback3, showFeedback4,
     feedbackText, setFeedbackText, handleFeedbackChange,
     handleSubmitClick, handleSubmitClick2, handleSubmitClick3, handleSubmitClick4,
     handleReportIssueClick, handleVscFeedbackClick, handleCiEditClick, handleRiContactsFillClick,
     handleCloseFeedbackClick, Contact1, Contact2, Contact3, Contact4, handleContact1, handleContact2, handleContact3, handleContact4
-}) =>
-    
-    {
+}) => {
     return (
         <>
-           <div className={`feedback1 ${showFeedback && windowWidth < 451 ? 'show' : ''}`} style={{ display: showFeedback ? 'flex' : 'none' }}>
+            <div className={`feedback1 ${showFeedback && windowWidth < 451 ? 'show' : ''}`} style={{ display: showFeedback ? 'flex' : 'none' , height: isLogin ? '65vh' : '55vh'}}>
                 <div className="anoption1">
                     <div className="ellipse"><FaFlag onClick={handleReportIssueClick} /></div>
                     <div className="icon2"><VscFeedback onClick={handleVscFeedbackClick} /></div>
@@ -24,13 +22,13 @@ const Feedback = ({
                     <div className="icon2"><RiContactsFill onClick={handleRiContactsFillClick} /></div>
                     <div className="icon2" onClick={handleCloseFeedbackClick}><FaTimes /></div>
                 </div>
-               
+
                 <div className="textarea">
                     <div className="feedback1-text">
                         <span>Let us know about the issue you are facing right now!</span>
                         <hr style={{ height: '1px', marginTop: '20px', borderWidth: 0, color: 'red', backgroundColor: '#bfbfbf', zIndex: '1' }} />
                     </div>
-                 
+
                     <div className="feedback1-inputs">
                         <div className="section">
                             <span>Choose a section</span>
@@ -43,19 +41,33 @@ const Feedback = ({
 
                         <div className="detail">
                             <span>Describe the issue in detail <span className='imp' style={{ color: 'red' }}>*</span></span>
-                            <textarea className="input-textarea" value={feedbackText} onChange={handleFeedbackChange} ></textarea>
+                            <textarea className="input-textarea" placeholder='Write here' value={feedbackText} onChange={handleFeedbackChange} ></textarea>
 
-                            <button className="attach-button">
+                            <button className="attach-button" style={{  bottom: isLogin ? '8.3vh' : '2vh', left: isLogin ? '7px' : '8px'}}>
                                 <IoIosAttach className="attach-icon" />
                                 <div>Attach</div>
                             </button>
+                           
+                            {isLogin && (
+                                <div className="add">
+                                    <span className="addspan">Enter your email to receive an update</span>
+                                    <textarea
+                                        className="input-textarea4"
+                                        value={andfeedbackText}
+                                        onChange={handleandFeedbackChange}
+                                        placeholder="Enter your email address"
+                                    ></textarea>
+                                </div>
+                            )}
 
                             <div className="bottom-row">
-                                <button className="submit-button" style={{ opacity: feedbackText ? 1 : 0.7 }} onClick={handleSubmitClick}>Submit</button>
+                                <button className="submit-button" style={{ opacity: feedbackText ? 1 : 0.7 ,bottom: isLogin ? '-60px' : '-40px', right: windowWidth > 450 ? (isLogin ? '0px' : '10px') : (isLogin ? '50px' : '60px')
+ }} onClick={handleSubmitClick}>Submit</button>
                             </div>
 
                         </div>
                     </div>
+                    
                 </div>
 
                 <div className="anoption">
@@ -66,9 +78,9 @@ const Feedback = ({
                     <div className="icon2" onClick={handleCloseFeedbackClick}><FaTimes /></div>
                 </div>
             </div>
-
-            <div className={`feedback2 ${showFeedback2 && windowWidth < 451 ? 'show' : ''}`} style={{ display: showFeedback2 ? 'flex' : 'none' }}>
-            <div className="anoption1">
+            
+            <div className={`feedback2 ${showFeedback2 && windowWidth < 451 ? 'show' : ''}`} style={{ display: showFeedback2 ? 'flex' : 'none' , height: isLogin ? '52vh' : '44vh'}}>
+                <div className="anoption1">
                     <div className="icon2"><FaFlag onClick={handleReportIssueClick} /></div>
                     <div className="ellipse"><VscFeedback onClick={handleVscFeedbackClick} /></div>
                     <div className="icon2"><CiEdit onClick={handleCiEditClick} /></div>
@@ -83,18 +95,24 @@ const Feedback = ({
                     <div className="feedback2-inputs">
                         <div className="detail2">
                             <textarea className="input-textarea2" placeholder='Write here' value={feedbackText} onChange={handleFeedbackChange}></textarea>
-                            <button className="attach-button2">
+
+                            <button className="attach-button2" style={{  bottom: isLogin ? '9vh' : '2vh', left: isLogin ? '8px' : '8px'}}>
                                 <IoIosAttach className="attach-icon2" />
                                 <div>Attach</div>
                             </button>
-
+                            {isLogin && (<div className="add">
+                                <span className="addspan">Enter your email to receieve an update</span>
+                                <textarea className="input-textarea4" value={andfeedbackText} onChange={handleandFeedbackChange} placeholder="Enter your email address"></textarea>
+                            </div>)}
                             <div className="bottom-row2">
-                                <button className="submit-button2" style={{ opacity: feedbackText ? 1 : 0.7 }} onClick={handleSubmitClick2}>Submit</button>
+             
+                                <button className="submit-button2" style={{ opacity: feedbackText ? 1 : 0.7 ,bottom: isLogin ? '-50px' : '-50px', right: windowWidth > 450 ? (isLogin ? '10px' : '10px') : (isLogin ? '50px' : '50px')
+ }} onClick={handleSubmitClick2}>Submit</button>
                             </div>
                         </div>
 
                         <div className="loginf2">
-                            <input type="checkbox" checked={isAnonymous}  name="" id=""  onChange={handleCheckboxChange}/>
+                            <input type="checkbox" checked={isAnonymous} name="" id="" onChange={handleCheckboxChange} />
                             <span >Send anonymously</span>
                         </div>
 
@@ -109,9 +127,10 @@ const Feedback = ({
                     <div className="icon22" onClick={handleCloseFeedbackClick}><FaTimes /></div>
                 </div>
             </div>
-             
-            <div className={`feedback3 ${showFeedback3 && windowWidth < 451 ? 'show' : ''}`} style={{ display: showFeedback3 ? 'flex' : 'none' }}>
-            <div className="anoption1">
+            
+
+            <div className={`feedback3 ${showFeedback3 && windowWidth < 451 ? 'show' : ''}`} style={{ display: showFeedback3 ? 'flex' : 'none' , height: isLogin ? '63vh' : '54vh'}}>
+                <div className="anoption1">
                     <div className="icon2"><FaFlag onClick={handleReportIssueClick} /></div>
                     <div className="icon2"><VscFeedback onClick={handleVscFeedbackClick} /></div>
                     <div className="ellipse"><CiEdit onClick={handleCiEditClick} /></div>
@@ -136,12 +155,17 @@ const Feedback = ({
                         <div className="detail3">
                             <span>Describe the suggestion in detail <span className='imp' style={{ color: 'red' }}>*</span></span>
                             <textarea className="input-textarea" value={feedbackText} placeholder='Write here' onChange={handleFeedbackChange}></textarea>
-                            <button className="attach-button">
+                            <button className="attach-button" style={{  bottom: isLogin ? '8.3vh' : '2vh', left: isLogin ? '7px' : '8px'}}>
                                 <IoIosAttach className="attach-icon" />
                                 <div>Attach</div>
                             </button>
+                           {isLogin && (<div className="add">
+                                <span className="addspan">Enter your email to receieve an update</span>
+                                <textarea className="input-textarea4" value={andfeedbackText} onChange={handleandFeedbackChange} placeholder="Enter your email address"></textarea>
+                            </div>)}
                             <div className="bottom-row3">
-                                <button className="submit-button3" style={{ opacity: feedbackText ? 1 : 0.7 }} onClick={handleSubmitClick3}>Submit</button>
+
+                                <button className="submit-button3" style={{ opacity: feedbackText ? 1 : 0.7,bottom: isLogin ? '-50px' : '-40px', right: windowWidth > 450 ? (isLogin ? '10px' : '10px') : (isLogin ? '50px' : '50px')}} onClick={handleSubmitClick3}>Submit</button>
                             </div>
                         </div>
                     </div>
@@ -155,8 +179,8 @@ const Feedback = ({
                 </div>
             </div>
 
-            <div className={`feedback4 ${showFeedback4 && windowWidth < 451 ? 'show' : ''}`} style={{ display: showFeedback4 ? 'flex' : 'none' }}>
-            <div className="anoption1">
+            <div className={`feedback4 ${showFeedback4 && windowWidth < 451 ? 'show' : ''}`} style={{ display: showFeedback4 ? 'flex' : 'none', height: isLogin ? '58vh' : '58vh'}}>
+                <div className="anoption1">
                     <div className="icon2"><FaFlag onClick={handleReportIssueClick} /></div>
                     <div className="icon2"><VscFeedback onClick={handleVscFeedbackClick} /></div>
                     <div className="icon2"><CiEdit onClick={handleCiEditClick} /></div>
