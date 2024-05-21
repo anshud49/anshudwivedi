@@ -41,7 +41,12 @@ body {
   align-items: center;
   cursor: pointer;
 }
-
+.highlight
+{
+  background-color: white;
+  color: black;
+  padding:2px 2px;
+}
 .down-arrow {
   margin-left: 5px;
 }
@@ -857,7 +862,13 @@ body {
 }
 
 @media (max-width: 450px) {
-
+  
+  .highlight
+{
+  color: white;
+  background-color: black;
+  padding:0px 0px;
+}
   .back-to-questions,
   .box5,
   .header-item {
