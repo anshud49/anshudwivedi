@@ -26,7 +26,8 @@ function App() {
   const [Contact4, setContact4] = useState('');
   const [overlay, setOverlay] = useState(false);
   const [isAnonymous, setIsAnonymous] = useState(false);
-
+  const [isnLogin, setnLogin] = useState(false);
+  
   
   const handleIconClick = () => {
     setShowF1(prevShowF1 => !prevShowF1);
@@ -196,7 +197,7 @@ function App() {
           </div>
 
         </header>
-        <hr style={{ height: '1px', marginTop: '0', borderWidth: 0, color: 'red', backgroundColor: '#333', zIndex: '1' }} />
+        <hr  style={{ height: '1px', marginTop: '0', borderWidth: 0, color: 'red', backgroundColor: '#333', zIndex: '1' }} />
         <div className="back-to-questions">
           <FaArrowLeft className="back-arrow" />
           <span className="back-text">Back to Questions</span>

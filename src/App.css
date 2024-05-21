@@ -15,8 +15,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  width: calc(100% -20px);
+  padding: 1rem; /* Use relative units */
+  width: calc(100% - 2rem); /* Adjust width based on padding */
 }
 
 .header-left {
@@ -38,7 +38,7 @@ body {
 }
 
 .header-item {
-  margin: 0 15px;
+  margin: 0 20px;
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -936,6 +936,10 @@ body {
 
 @media (max-width: 450px) {
 
+  .header
+  {
+    background-color: #333;
+  }
   .rocketicon {
     flex-direction: row;
   }
@@ -952,11 +956,7 @@ body {
     opacity: .7;
   }
 
-  .highlight {
-    color: white;
-    background-color: black;
-    padding: 0px 0px;
-  }
+ 
 
   .back-to-questions,
   .box5,
@@ -983,7 +983,7 @@ body {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    max-width: 300px;
+    /* max-width: 300px; */
     margin: 0 5px;
   }
 
