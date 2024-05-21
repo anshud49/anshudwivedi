@@ -42,6 +42,7 @@ function App() {
     setShowHelpIcon(true);
     setShowicon(true);
     setOverlay(false);
+   
   };
 
   const handleFeedbackChange = (e) => {
@@ -69,6 +70,7 @@ function App() {
       setShowHelpIcon(true);
       setShowF1(false);
       setShowicon(true);
+      setOverlay(false);
       toast.success("Thanks for bringing the issue to our attention. We'll review it shortly and provide an update soon");
     }
   };
