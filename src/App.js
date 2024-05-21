@@ -216,8 +216,8 @@ function App() {
           <span className="header-item">Practice <FaChevronDown className="down-arrow" /></span>
           <FaUserCircle className="profile-icon" />
         </div>
-
       </header>
+
       <hr style={{ height: '1px', marginTop: '0', borderWidth: 0, color: 'red', backgroundColor: '#333', zIndex: '1' }} />
       <div className="back-to-questions">
         <FaArrowLeft className="back-arrow" />
@@ -239,6 +239,7 @@ function App() {
                 <span>FILTER</span>
               </button>
             </div>
+            
             <div className="adropdown-container">
               {[...Array(5)].map((_, index) => (
                 <select key={index} className="anddropdown">
@@ -254,7 +255,6 @@ function App() {
                 </select>
               ))}
             </div>
-
           </div>
 
         </div>
