@@ -1086,5 +1086,9 @@ body {
     width: 88%;
     overflow-y: hidden;
   }
-
+  .feedback1-text,.feedback2-text,
+  .feedback3-text,
+  .feedback4-text {
+   width:90%;
+  }
 }
