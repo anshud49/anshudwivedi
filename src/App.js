@@ -31,7 +31,7 @@ function App() {
   const [isAnonymous, setIsAnonymous] = useState(false);
   const [andfeedbackText, setandFeedbackText] = useState('');
  
-  
+
   /////////////////for not signed in user, make isLogin true///////////////////////
   const [isLogin, setLogin] = useState(true);
 
@@ -216,9 +216,11 @@ function App() {
           <span className="header-item">Practice <FaChevronDown className="down-arrow" /></span>
           <FaUserCircle className="profile-icon" />
         </div>
+       
       </header>
 
-      <hr style={{ height: '1px', display: (windowWidth>451) ?'flex':'none', marginTop: '0', borderWidth: 0, color: 'red', backgroundColor: '#333', zIndex: '1' }} />
+      <hr style={{ height: '1px', display: (windowWidth>451) ?'flex':'none',width:'100%', marginTop: '0', borderWidth: 0, color: '#333', backgroundColor: '#333', zIndex: '1' }} />
+      <hr style={{ height: '1px', marginTop: '20px', borderWidth: 0, color: 'red', backgroundColor: '#bfbfbf', zIndex: '1' }} />
       <div className="back-to-questions">
         <FaArrowLeft className="back-arrow" />
         <span className="back-text">Back to Questions</span>
