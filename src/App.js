@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { 
-  FaChevronDown, FaUserCircle, FaArrowLeft, FaEye, FaInfoCircle, 
-  FaPencilAlt, FaThumbsUp, FaCommentDots, FaFlag, FaTimes 
+import {
+  FaChevronDown, FaUserCircle, FaArrowLeft, FaEye, FaInfoCircle,
+  FaPencilAlt, FaThumbsUp, FaCommentDots, FaFlag, FaTimes
 } from 'react-icons/fa';
 import { IoDocumentText } from 'react-icons/io5';
 import { VscFeedback } from 'react-icons/vsc';
@@ -30,7 +30,7 @@ function App() {
   const [overlay, setOverlay] = useState(false);
   const [isAnonymous, setIsAnonymous] = useState(false);
   const [andfeedbackText, setandFeedbackText] = useState('');
- 
+
 
   /////////////////for not signed in user, make isLogin true///////////////////////
   const [isLogin, setLogin] = useState(true);
@@ -206,21 +206,23 @@ function App() {
 
   return (
     <div className="app" >
+      <div className="head">
 
-      <header className="header" style={{ opacity: overlay && windowWidth < 451 ? '0.4' : '1' }}>
-        <div className="header-left">
-          <span className="platform-text">THE <span className="highlight">PRODUCT</span> PLATFORM</span>
-        </div>
-        <div className="header-right">
-          <span className="header-item">Learn <FaChevronDown className="down-arrow" /></span>
-          <span className="header-item">Practice <FaChevronDown className="down-arrow" /></span>
-          <FaUserCircle className="profile-icon" />
-        </div>
-       
-      </header>
 
-      <hr style={{ height: '1px', display: (windowWidth>451) ?'flex':'none',width:'100%', marginTop: '0', borderWidth: 0, color: '#333', backgroundColor: '#333', zIndex: '1' }} />
-      <hr style={{ height: '1px', marginTop: '20px', borderWidth: 0, color: 'red', backgroundColor: '#bfbfbf', zIndex: '1' }} />
+        <header className="header" style={{ opacity: overlay && windowWidth < 451 ? '0.4' : '1' }}>
+          <div className="header-left">
+            <span className="platform-text">THE <span className="highlight">PRODUCT</span> PLATFORM</span>
+          </div>
+          <div className="header-right">
+            <span className="header-item">Learn <FaChevronDown className="down-arrow" /></span>
+            <span className="header-item">Practice <FaChevronDown className="down-arrow" /></span>
+            <FaUserCircle className="profile-icon" />
+          </div>
+
+        </header>
+
+        <hr style={{ height: '1px', display: (windowWidth > 451) ? 'flex' : 'none', width: '100%', marginTop: '0', borderWidth: 0, color: '#333', backgroundColor: '#333', zIndex: '1' }} />
+      </div>
       <div className="back-to-questions">
         <FaArrowLeft className="back-arrow" />
         <span className="back-text">Back to Questions</span>
@@ -241,7 +243,7 @@ function App() {
                 <span>FILTER</span>
               </button>
             </div>
-            
+
             <div className="adropdown-container">
               {[...Array(5)].map((_, index) => (
                 <select key={index} className="anddropdown">
@@ -365,8 +367,8 @@ function App() {
             <ToastContainer />
           </div>
           <Feedback
-          handleandFeedbackChange={handleandFeedbackChange}
-          andfeedbackText={andfeedbackText}
+            handleandFeedbackChange={handleandFeedbackChange}
+            andfeedbackText={andfeedbackText}
             isLogin={isLogin}
             windowWidth={windowWidth}
             isAnonymous={isAnonymous}

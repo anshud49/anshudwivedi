@@ -14,7 +14,7 @@ const Feedback = ({
 }) => {
     return (
         <>
-            <div className={`feedback1 ${showFeedback && windowWidth < 451 ? 'show' : ''}`} style={{ display: showFeedback ? 'flex' : 'none' , height: isLogin ? '65vh' : '55vh'}}>
+            <div className={`feedback1 ${showFeedback && windowWidth < 451 ? 'show' : ''}`} style={{ display: showFeedback ? 'flex' : 'none' , height: isLogin ? '75vh' : '55vh'}}>
                 <div className="anoption1">
                     <div className="ellipse"><FaFlag onClick={handleReportIssueClick} /></div>
                     <div className="icon2"><VscFeedback onClick={handleVscFeedbackClick} /></div>
@@ -79,7 +79,7 @@ const Feedback = ({
                 </div>
             </div>
             
-            <div className={`feedback2 ${showFeedback2 && windowWidth < 451 ? 'show' : ''}`} style={{ display: showFeedback2 ? 'flex' : 'none' , height: isLogin ? '52vh' : '44vh'}}>
+            <div className={`feedback2 ${showFeedback2 && windowWidth < 451 ? 'show' : ''}`} style={{ display: showFeedback2 ? 'flex' : 'none' , height: isLogin ? '60vh' : '44vh'}}>
                 <div className="anoption1">
                     <div className="icon2"><FaFlag onClick={handleReportIssueClick} /></div>
                     <div className="ellipse"><VscFeedback onClick={handleVscFeedbackClick} /></div>
@@ -129,7 +129,7 @@ const Feedback = ({
             </div>
             
 
-            <div className={`feedback3 ${showFeedback3 && windowWidth < 451 ? 'show' : ''}`} style={{ display: showFeedback3 ? 'flex' : 'none' , height: isLogin ? '63vh' : '54vh'}}>
+            <div className={`feedback3 ${showFeedback3 && windowWidth < 451 ? 'show' : ''}`} style={{ display: showFeedback3 ? 'flex' : 'none' , height: isLogin ? '75vh' : '54vh'}}>
                 <div className="anoption1">
                     <div className="icon2"><FaFlag onClick={handleReportIssueClick} /></div>
                     <div className="icon2"><VscFeedback onClick={handleVscFeedbackClick} /></div>
@@ -179,7 +179,7 @@ const Feedback = ({
                 </div>
             </div>
 
-            <div className={`feedback4 ${showFeedback4 && windowWidth < 451 ? 'show' : ''}`} style={{ display: showFeedback4 ? 'flex' : 'none', height: isLogin ? '58vh' : '58vh'}}>
+            <div className={`feedback4 ${showFeedback4 && windowWidth < 451 ? 'show' : ''}`} style={{ display: showFeedback4 ? 'flex' : 'none', height: isLogin ? '75vh' : '58vh'}}>
                 <div className="anoption1">
                     <div className="icon2"><FaFlag onClick={handleReportIssueClick} /></div>
                     <div className="icon2"><VscFeedback onClick={handleVscFeedbackClick} /></div>
