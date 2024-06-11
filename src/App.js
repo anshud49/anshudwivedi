@@ -211,7 +211,7 @@ function App() {
 
         <header className="header" style={{ opacity: overlay && windowWidth < 451 ? '0.4' : '1' }}>
           <div className="header-left">
-            <span className="platform-text">THE <span className="highlight">PRODUCT</span> PLATFORM</span>
+            <span className="platform-text">THE <span className="highlight">FEEDBACK</span> PLATFORM</span>
           </div>
           <div className="header-right">
             <span className="header-item">Learn <FaChevronDown className="down-arrow" /></span>
