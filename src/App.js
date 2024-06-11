@@ -32,7 +32,7 @@ function App() {
   const [andfeedbackText, setandFeedbackText] = useState('');
 
 
-  /////////////////for not signed in user, make isLogin true///////////////////////
+  /////////////////for  signed in user, make isLogin true///////////////////////
   const [isLogin, setLogin] = useState(true);
 
   const handleLogin = () => {
