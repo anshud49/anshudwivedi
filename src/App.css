@@ -1317,3 +1317,135 @@ justify-content: space-between;
     width: 90%;
   }
 }
+
+@media (max-width: 360px) 
+{
+    .badge
+    {
+      font-size: 13px;
+      padding:3px 10px;
+    }
+    .rocket
+    {
+      font-size: 17px;
+    }
+    .box1-div2 p ,.box1-div3 p 
+    {
+      font-size: 12px;
+    }
+    .left-text,.right-section
+    {
+      font-size: 12px;
+    }
+    .dropdownr
+    {
+      font-size: 10px;
+    }
+    .profile-icon1
+    {
+      font-size: 25px;
+    }
+    .name-date
+    {
+      font-size: 10px;
+    }
+    .edit-icon
+    {
+      font-size: 10px;
+    }
+    .edit-text
+    {
+      font-size: 12px;
+    }
+  .box4-div2 p ,   .box4-div2 p span
+   {
+    font-size: 12px;
+   }
+
+   .icon 
+   {
+    width: 10px;
+    margin-right: 2px;
+   }
+   .comment-input
+   {
+    font-size:8px;
+    margin-left: 1px;
+   }
+   .like-text
+   {
+    font-size: 10px;
+    margin-left: 1px;
+    margin-right: 8px;;
+   }
+   .post-button 
+   {
+    font-size: 10px;
+   }
+}
+@media (max-width:275px) 
+{
+    .badge
+    {
+      font-size: 11px;
+    }
+    .rocket
+    {
+      font-size: 15px;
+    }
+    .box1-div2 p ,.box1-div3 p 
+    {
+      font-size: 10px;
+    }
+    .left-text,.right-section
+    {
+      font-size: 10px;
+    }
+    .dropdownr
+    {
+      font-size: 8px;
+    }
+    .profile-icon1
+    {
+      font-size: 22px;
+    }
+    .name-date
+    {
+      font-size: 8px;
+    }
+    .edit-icon
+    {
+      font-size: 8px;
+    }
+    .edit-text
+    {
+      font-size: 10px;
+    }
+  .box4-div2 p 
+   {
+    font-size: 10px;
+   }
+   .box4-div2 p span
+   {
+    font-size: 8px;
+   }
+
+   .icon 
+   {
+    width: 8px;
+   }
+   .comment-input
+   {
+    font-size:7px;
+   }
+   .like-text
+   {
+    font-size: 8px;
+    margin-left: 1px;
+    margin-right: 7px;
+   }
+   .post-button 
+   {
+    font-size: 8px;
+   }
+}
